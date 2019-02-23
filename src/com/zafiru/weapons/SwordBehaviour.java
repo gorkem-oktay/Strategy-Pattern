@@ -1,6 +1,6 @@
 package com.zafiru.weapons;
 
-public class Sword implements IWeaponBehaviour {
+public class SwordBehaviour implements IWeaponBehaviour {
 
     @Override
     public void hit() {

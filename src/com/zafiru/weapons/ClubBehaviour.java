@@ -1,6 +1,6 @@
 package com.zafiru.weapons;
 
-public class Club implements IWeaponBehaviour{
+public class ClubBehaviour implements IWeaponBehaviour{
 
     @Override
     public void hit() {
