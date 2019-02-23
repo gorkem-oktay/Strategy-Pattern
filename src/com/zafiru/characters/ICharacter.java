@@ -1,11 +1,13 @@
 package com.zafiru.characters;
 
+import com.zafiru.weapons.IWeapon;
 import com.zafiru.weapons.IWeaponBehaviour;
 
 public abstract class ICharacter {
 
     private String mName;
     private IWeaponBehaviour mWeaponBehaviour;
+    private IWeapon mWeapon;
     private String mType;
 
     public String getType() {
@@ -24,15 +26,15 @@ public abstract class ICharacter {
         this.mName = name;
     }
 
-    public IWeaponBehaviour getWeaponBehaviour() {
-        return mWeaponBehaviour;
+    public IWeapon getWeapon(){
+        return mWeapon;
     }
 
-    public void setWeaponBehaviour(IWeaponBehaviour weaponBehaviour) {
-        this.mWeaponBehaviour = weaponBehaviour;
+    public void setWeapon(IWeapon weapon){
+        this.mWeapon = weapon;
     }
 
     public void hit(){
-        this.getWeaponBehaviour().hit();
+        getWeapon().hit();
     }
 }
