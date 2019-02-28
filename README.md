@@ -4,7 +4,7 @@
 In these repositories, some design patterns are implemented to a mini game system for self education. They may not be suited to use in an actual game (directly anyway). However, it is good to have some examples underhand to take reference. And even if anyone wants to use them, you are welcome.
 
 ### Definition
-Strategy pattern, defines a family of algorithms, encapsulates each one, and makes them interchangeable. Strategy lets the algorithm vary independently from clients that use it.
+**_Strategy pattern_**, defines a family of algorithms, encapsulates each one, and makes them interchangeable. Strategy lets the algorithm vary independently from clients that use it.
 
 ### Description
 Our character runs into an enemy and battles with it. Of course he is using weapons and he needs to change between them time to time. However, weapons may have their own hit behaviours. So if we just make some Sword, Dagger, Club classes for each weapons and write a hit function, even with a little change with their behaviour, we need to make a new class for each one. Like NormalSword, SwordWithCritical, SwordWithBleed... It doesn't seem much efficient, right?
